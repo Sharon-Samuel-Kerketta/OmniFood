@@ -1,0 +1,134 @@
+/*--------Tablet to equal to or 1200px width--------*/
+@media only screen and (max-width:1200px)
+{
+    .hero-text-box{
+        position: absolute;
+        width:100%;
+        padding : 0 2%;
+    }
+    .row{
+        padding : 0 2%;
+    }
+}
+
+/*--------Small tablet to big tablet less than or  equal to 1023px and more than 787px width--------*/
+@media only screen and (max-width:1023px)
+{
+    body{
+        font-size:18px;
+    }
+    .long-copy{
+        line-height:150%;
+        width:80%;
+        margin-left: 10%;
+    }
+    .steps-box{
+        margin-top:10px;
+    }
+    .works-step{
+        margin-bottom:35px;
+    }
+    .app-screen{
+        width:45%;
+        height:auto;
+    }
+    .section-cities{
+        font-size:15px;
+    }
+    .icon-small{
+        margin-right:0px;
+    }
+    .section-cities .col{
+        margin: 0px;
+    }
+    .plan-box{
+        margin-left:0px;
+    }
+    .contact-form{
+        width:80%;
+    }
+    .footer-nav li{
+        font-size:14px;
+        margin-right:6px;
+    }
+}
+
+/*--------Small tablet equal to or less than 767px width and more than 480px--------*/
+@media only screen and (max-width:767px)
+{
+    .main-nav{
+        display: none;
+    }
+    body{
+        font-size:15px;
+    }
+    section{
+        padding: 5% 0;
+    }
+    h1{
+        font-size:25px;
+    }
+    h2{
+        font-size:22px;
+        margin-bottom: 15px;
+    }
+    .long-copy{
+        width:90%;
+        margin:0 5%;
+    }
+    .box i,.box h3{
+        text-align: center;
+    }
+    .steps-box:first-child{
+       text-align: center;
+    }
+    .steps-box:last-child{
+        margin-top:4%;
+    }
+    .app-screen{
+        width:30%;
+    }
+    .works-step div{
+        height:25px;
+        width:25px;
+        text-align:center;
+        padding:3px;
+        font-size: 12px;
+        margin-right:6%;
+    }
+    .works-step{
+        margin-bottom:20px;
+    }
+    .btm{
+        text-align: center;
+    }
+    .col {
+        display: block;
+        float: left;
+        margin: 0 0 3.5% 0;
+        width:100%;
+    }
+    .plan-box{
+        width:100%;
+    }
+    .footer-nav{
+        display: flex;
+        justify-content: center;
+        width:100%;
+        margin : 0 0 2% 0;
+    }
+    .social-links{
+        width:100%;
+        float:none;
+        display: flex;
+        justify-content: center;
+        margin : 0 0 2% 0;
+    }
+}
+/*--------Phones equal to or less than 480px width and more than 0px--------*/
+@media only screen and (max-width:480px)
+{
+    .contact-form{
+        width:100%;
+    }
+}
