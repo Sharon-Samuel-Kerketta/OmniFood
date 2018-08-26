@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Omnifood is premium food delivery service with the mission to bring affordable 
+    food and healthy meals to as many people as possible.">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/Responsive Grid Systems/css/4cols.css">
     <link rel="stylesheet" type="text/css" href="vendors/Responsive Grid Systems/css/2cols.css"> 
     <link rel="stylesheet" type="text/css" href="vendors/Responsive Grid Systems/css/3cols.css">
     <link rel="stylesheet" type="text/css" href="vendors/Responsive Grid Systems/css/col.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
     <title>OmniFood</title>
 </head>
 <body>
@@ -20,7 +34,8 @@
         <nav>
             <div class="row">
                 <img src="resources/css/img/logo-white.png" alt="Omnifood Logo" class="logo ">
-                <ul class="main-nav">
+                <img src="resources/css/img/logo.png" alt="Omnifood Logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
                     <li><a href="#features">Food Delivery</a></li>
                     <li><a href="#steps">How It Works</a></li>
                     <li>
@@ -30,19 +45,19 @@
                         <a href="#plans">Sign up</a>
                     </li>
                 </ul>
-
+                <a class="mobile-nav-icon js--nav-icon"><i class="icon ion-md-menu"></i></a>
             </div>
         </nav>
 
         <div class="hero-text-box">
             <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I’m hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full" href="#plans">I’m hungry</a>
+            <a class="btn btn-ghost" href="#features">Show me more</a>
 
         </div>
     </header>
 
-    <section class="section-features clearfix" id="features">
+    <section class="section-features js--section-features clearfix" id="features">
         <div class="row">
             <h2>Get Food Fast &mdash; Not Fast Food </h2>
             <p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service.
@@ -50,7 +65,7 @@
             take care of that, we’re really good at it, we promise!
             </p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span_1_of_4 box">
                 <i class="icon ion-md-infinite icon-big"></i>
                 <h3>Up to 365 days/year</h3>
@@ -132,7 +147,7 @@
         </div>
         <div class="row">
             <div class="col span_1_of_2 steps-box">
-                <img src="resources/css/img/app-iPhone.png" alt="Omnifood App on IPhone" class="app-screen">
+                <img src="resources/css/img/app-iPhone.png" alt="Omnifood App on IPhone" class="app-screen js--wp-2">
             </div>
             <div class="col span_1_of_2 steps-box">
                 <div class="works-step">
@@ -159,7 +174,7 @@
         <div class="row">
             <h2>We are currently in these Cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span_1_of_4 box">
                 <img src="resources/css/img/lisbon-3.jpg" alt="Lisbon">
                 <h3>Lisbon</h3>
@@ -236,7 +251,7 @@
                 <blockquote>
                      Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver.
                     Now that I got used to it, I couldn't live without my daily meals!
-                    <cite><img src="resources/css/img/customer-1.jpg">Alberto Duncan</cite>
+                    <cite><img src="resources/css/img/customer-1.jpg" alt="customer1">Alberto Duncan</cite>
                 </blockquote>
             </div>
             <div class="col span_1_of_3">
@@ -244,7 +259,7 @@
                     Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver.
                     Now that I got used to it, I couldn't live without my daily meals!
                     <cite>
-                        <img src="resources/css/img/customer-3.jpg">Joana Silva</cite>
+                        <img src="resources/css/img/customer-3.jpg" alt="customer2">Joana Silva</cite>
                 </blockquote>
             </div>
             <div class="col span_1_of_3">
@@ -252,7 +267,7 @@
                     Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver.
                     Now that I got used to it, I couldn't live without my daily meals!
                     <cite>
-                        <img src="resources/css/img/customer-2.jpg" >Milton Chapman</cite>
+                        <img src="resources/css/img/customer-2.jpg" alt="customer3" >Milton Chapman</cite>
                 </blockquote>
             </div>
         </div>
@@ -264,7 +279,7 @@
         </div>
         <div class="row">
             <div class="col span_1_of_3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">Rs.3000<span>/Month</span></p>
@@ -314,7 +329,7 @@
                         <ul>
                             <li><i class="icon ion-md-checkmark icon-small"></i>1 meal</li>
                             <li><i class="icon ion-md-checkmark icon-small"></i>Order from 8am to 12pm</li>
-                            <li><i class="icon ion-md-close icon-small"></i></li>
+                            <li><i class="icon ion-md-close icon-small"></i>&nbsp;<br>&nbsp;</li>
                             <li><i class="icon ion-md-checkmark icon-small"></i>Free delivery</li>
                         </ul>
                     </div>
@@ -326,66 +341,73 @@
         </div>
     </section>
 
-    <section class="section-form clearfix" id="contact">
-        <div class="row">
-            <h2>we're happy to hear from you</h2>
+     <div class="map-box clearfix">
+
+        <div class="map"></div>
+            
+        <div class="form-box clearfix">
+
+            <div class="row">
+                <h2>we're happy to hear from you</h2>
+            </div>
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="find-us">How did you find us</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <select name="find-us" id="find-us">
+                            <option value="Friends" selected >Friends</option>
+                            <option value="Family" >Family</option>
+                            <option value="Advertisement" >Advertisement</option>
+                            <option value="Search Engine" >Search Engine</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="news">Newsletter</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="checkbox" name="news" id="news" checked> Yes , Please
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="message">Drop us a Line</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <textarea name="message" id="message" placeholder="Your Feedback"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="submit" value="Send It">
+                    </div>
+                </div>
+            </form>
         </div>
-        <form method="post" action="#" class="contact-form">
-            <div class="row">
-                <div class="col span_1_of_3">
-                    <label for="name">Name</label>
-                </div>
-                <div class="col span_2_of_3">
-                    <input type="text" name="name" id="name" placeholder="Your Name" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span_1_of_3">
-                    <label for="email">Email</label>
-                </div>
-                <div class="col span_2_of_3">
-                    <input type="email" name="email" id="email" placeholder="Your email" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span_1_of_3">
-                    <label for="find-us">How did you find us</label>
-                </div>
-                <div class="col span_2_of_3">
-                    <select name="find-us" id="find-us">
-                        <option value="Friends" selected >Friends</option>
-                        <option value="Family" >Family</option>
-                        <option value="Advertisement" >Advertisement</option>
-                        <option value="Search Engine" >Search Engine</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span_1_of_3">
-                    <label for="news">Newsletter</label>
-                </div>
-                <div class="col span_2_of_3">
-                    <input type="checkbox" name="news" id="news" checked> Yes , Please
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span_1_of_3">
-                    <label for="message">Drop us a Line</label>
-                </div>
-                <div class="col span_2_of_3">
-                    <textarea name="message" id="message" placeholder="Your Feedback"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span_1_of_3">
-                    <label>&nbsp;</label>
-                </div>
-                <div class="col span_2_of_3">
-                    <input type="submit" value="Send It">
-                </div>
-            </div>
-        </form>
-    </section>
+    </div>
+
     <footer class="clearfix">
         <div class="row">
             <div class="col span_1_of_2">
@@ -410,5 +432,12 @@
             <p>Copyright &copy; 2018 By Sharon. All rights Reserved.</p>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="resources/js/gmaps.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>
+
 </html>

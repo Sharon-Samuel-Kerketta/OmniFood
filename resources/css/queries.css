@@ -9,6 +9,9 @@
     .row{
         padding : 0 2%;
     }
+    .main-nav{
+        display: block;
+    }
 }
 
 /*--------Small tablet to big tablet less than or  equal to 1023px and more than 787px width--------*/
@@ -56,9 +59,6 @@
 /*--------Small tablet equal to or less than 767px width and more than 480px--------*/
 @media only screen and (max-width:767px)
 {
-    .main-nav{
-        display: none;
-    }
     body{
         font-size:15px;
     }
@@ -112,22 +112,85 @@
         width:100%;
     }
     .footer-nav{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width:100%;
         margin : 0 0 2% 0;
     }
     .social-links{
         width:100%;
         float:none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin : 0 0 2% 0;
     }
+
+    .mobile-nav-icon{
+        display:block;
+        float:right;
+    }
+    .main-nav{
+        float:left;
+        margin-top: 20px;
+        margin-left:25px;
+        display:none;
+    }
+    .main-nav li{
+        display: block; 
+    }
+    .main-nav li a:visited,.main-nav li a:link{
+        display: block;
+        border:0;
+        padding : 10px 0; 
+    }
+    .sticky .main-nav li a:link,.sticky .main-nav li a:visited{
+        padding:10px;
+    }
+    .sticky .main-nav{
+        margin-top:8px;
+    }
+    .sticky .mobile-nav-icon i{
+        color:#555;
+    }
+    .sticky .mobile-nav-icon {
+        margin-top: 15px;
+    }
+    .logo{
+        height:75px;
+    }
+    
+    .map {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        z-index: 0;
+    }
+    .map-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .form-box {
+        position: relative;
+        height: auto;
+        width: 100%;
+        padding: 30px 0; 
+    }
+
 }
 /*--------Phones equal to or less than 480px width and more than 0px--------*/
 @media only screen and (max-width:480px)
 {
+    
     .contact-form{
         width:100%;
     }
